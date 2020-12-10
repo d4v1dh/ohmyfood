@@ -1,0 +1,93 @@
+* {
+  margin: 0px;
+}
+
+body {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 2550px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 10vw;
+  background-color: #FFFFFF;
+  box-shadow: 4px 4px 15px -3px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+header img {
+  height: 5vw;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #EAEAEA;
+  height: 8vw;
+  top: 10vw;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 47vw;
+  background-color: #F6F6F6;
+  text-align: center;
+}
+.intro__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 25vw;
+}
+
+.howto {
+  background-color: #FFFFFF;
+  height: 72vw;
+}
+.howto__container {
+  height: 60vw;
+}
+.howto__container h1 {
+  color: red;
+}
+
+.footer {
+  background-color: #353535;
+}
+.footer__container {
+  list-style: none;
+}
+.footer__container a {
+  color: white;
+  text-decoration: none;
+}
+.footer__container path {
+  fill: white;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+  height: 7vw;
+  width: 30vw;
+}
+
+.purple--button {
+  color: white;
+  border-radius: 20vw;
+  background: linear-gradient(176deg, #ff79da 0%, #9356dc 69%);
+}

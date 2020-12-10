@@ -1,0 +1,145 @@
+$purple_main: #9356DC;
+$pink_main: #FF79DA;
+$blue_main: #99E2D0;
+$background: #FFFFFF;
+$grey_background: #F6F6F6;
+$black_footer: #353535;
+$shadow: 4px 4px 15px -3px rgba(0, 0, 0, 0.30);
+$purpink_gradient: linear-gradient(176deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 69%);
+
+@mixin center($direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@font-face {
+    font-family: "Shrikhand";
+    src: url('/Ohmyfood/fonts/Shrikhand/Shrikhand-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Roboto_thin";
+    src: url('/Ohmyfood/fonts/Roboto/Roboto-Thin.ttf');
+}
+
+@font-face {
+    font-family: "Roboto_regular";
+    src: url('/Ohmyfood/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Roboto_medium";
+    src: url('/Ohmyfood/fonts/Roboto/Roboto-Medium.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    color: unset;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $background;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto_regular';
+
+    hr {
+        width: 10.66vw;
+        height: 0.8vw;
+        margin: 0px auto 0 0.26vw;
+        background-color: $blue_main;
+        border: none;
+    }
+
+    h1 {
+        font-family: 'Roboto_medium';
+        font-size: 6.4vw;
+    }
+
+    h2 {
+        font-family: 'Roboto_regular';
+        font-size: 4.8vw;
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    h3 {
+        font-family: 'Roboto_thin';
+        font-size: 4.53vw;
+    }
+
+    h4 {
+        font-family: 'Roboto_thin';
+        font-size: 4vw;
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+
+
+header {
+    @include center();
+    width: 100%;
+    height: 17.33vw;
+    background-color: $background;
+    box-shadow: $shadow;
+    img {
+        width: 44vw;
+    }
+}
+
+.footer {
+    @include center();
+    background-color: $black_footer;
+    &__container {
+        @include center(column);
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 90%;
+        height: 37vw;
+
+        a {
+            color: white;
+            font-family: 'Roboto_regular';
+            font-size: 4vw;
+        }
+
+        svg {
+            height: 4vw;
+            width: unset;
+
+            path {
+                fill: white;
+            }
+        }
+    }
+}
+
+.button {
+    @include center();
+    height: 13.33vw;
+    width: 58.66vw;
+    border-radius: 20vw;
+    font-family: 'Roboto_regular';
+    font-size: 4.26vw;
+
+}
+
+.purple--button {
+    color: white;
+    background: $purpink_gradient;
+}
