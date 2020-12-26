@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Shrikhand";
-  src: url("/Ohmyfood/fonts/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("/ohmyfood/fonts/Shrikhand/Shrikhand-Regular.ttf");
 }
 @font-face {
   font-family: "Roboto_thin";
-  src: url("/Ohmyfood/fonts/Roboto/Roboto-Thin.ttf");
+  src: url("/ohmyfood/fonts/Roboto/Roboto-Thin.ttf");
 }
 @font-face {
   font-family: "Roboto_regular";
-  src: url("/Ohmyfood/fonts/Roboto/Roboto-Regular.ttf");
+  src: url("/ohmyfood/fonts/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "Roboto_medium";
-  src: url("/Ohmyfood/fonts/Roboto/Roboto-Medium.ttf");
+  src: url("/ohmyfood/fonts/Roboto/Roboto-Medium.ttf");
 }
 * {
   margin: 0px;
