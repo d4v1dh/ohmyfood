@@ -46,7 +46,8 @@
             @include center();
             justify-content: unset;
             border-radius: 4vw;
-            width: 100%;
+            width: 95.5%;
+            margin-left: 3.80vw;
             height: 20vw;
             background-color: $grey_background;
             .fas {
@@ -59,7 +60,10 @@
     a:nth-child(4) {
         background-color: #f5edff;
         .fas {
-            color: $purple_main;
+            background: $purpink_gradient;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
         }
     }
 }
@@ -94,19 +98,10 @@
                     align-items: unset;
                 }
                 .heart {
-                    width: fit-content;
                     font-size: 6.13vw;
                     @include center();
                 }
-                .fa-heart:nth-child(2) {
-                    position: absolute;
-                    opacity: 0;
-                }
-                .fa-heart:nth-child(2):hover {
-                        opacity: 1;
-                        color: $purple_main;
-                        font-size: 6.66vw;
-                }
+                @include heart();
             }
             img {
                 border-top-left-radius: 4vw;
@@ -138,10 +133,10 @@
     position: relative;
     @include center();
     border-radius: 6.67vw;
-    left: -3vw;
+    left: -3.5vw;
     width: 6.67vw;
     height: 6.67vw;
-    background-color: $purple_main;
+    background: $purpink_gradient;
     span {
         color: white;
     }

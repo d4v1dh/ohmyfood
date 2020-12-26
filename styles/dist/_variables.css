@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Shrikhand";
+  src: url("/Ohmyfood/fonts/Shrikhand/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto_thin";
+  src: url("/Ohmyfood/fonts/Roboto/Roboto-Thin.ttf");
+}
+@font-face {
+  font-family: "Roboto_regular";
+  src: url("/Ohmyfood/fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto_medium";
+  src: url("/Ohmyfood/fonts/Roboto/Roboto-Medium.ttf");
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: unset;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto_regular";
+}
+body hr {
+  width: 10.66vw;
+  height: 0.8vw;
+  margin: 0px auto 0 0.26vw;
+  background-color: #99E2D0;
+  border: none;
+}
+body h1 {
+  font-family: "Roboto_medium";
+  font-size: 6.4vw;
+}
+body h2 {
+  font-family: "Roboto_regular";
+  font-size: 4.8vw;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+body h3 {
+  font-family: "Roboto_thin";
+  font-size: 4.53vw;
+}
+body h4 {
+  font-family: "Roboto_thin";
+  font-size: 4vw;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 17.33vw;
+  background-color: #FFFFFF;
+  box-shadow: 4px 4px 15px -3px rgba(0, 0, 0, 0.3);
+}
+header img {
+  width: 44vw;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #353535;
+}
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 90%;
+  height: 37vw;
+}
+.footer__container a {
+  color: white;
+  font-family: "Roboto_regular";
+  font-size: 4vw;
+}
+.footer__container svg {
+  height: 4vw;
+  width: unset;
+}
+.footer__container svg path {
+  fill: white;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 13.33vw;
+  width: 58.66vw;
+  border-radius: 20vw;
+  font-family: "Roboto_regular";
+  font-size: 4.26vw;
+}
+
+.purple--button {
+  color: white;
+  background: linear-gradient(176deg, #ff79da 0%, #9356dc 69%);
+}

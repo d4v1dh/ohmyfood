@@ -43,15 +43,7 @@ header {
         .heart {
             @include center()
         }
-        .fa-heart:nth-child(2) {
-            position: absolute;
-            opacity: 0;
-        }
-        .fa-heart:nth-child(2):hover {
-                opacity: 1;
-                font-size: 6.66vw;
-                color: $purple_main;
-        }
+        @include heart();
     }
 
     .description {
