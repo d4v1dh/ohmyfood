@@ -3,7 +3,7 @@
 .presentation {
     img {
         position: absolute;
-        height: 72vw;
+        height: 270px;
         object-fit: cover;
         width: 100%;
         z-index: -1;
@@ -14,8 +14,8 @@ header {
     a {
         @include center();
         .fas {
-            font-size: 5vw;
-            left: 6.67vw;
+            font-size: 19px;
+            left: 25px;
             position: absolute;
         }
     }
@@ -24,20 +24,21 @@ header {
 .menu {
     @include center();
     flex-direction: column;
-    margin-top: 58.66vw;
-    padding: 9.33vw 0 0 0;
+    margin-top: 220px;
+    padding: 35px 0 0 0;
     background-color: $grey_background;
-    border-top-left-radius: 7.5vw;
-    border-top-right-radius: 7.5vw;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
     &__container {
         width: 90%;
+        max-width: 500px;
         div {
             @include center(column);
             justify-content: space-around;
         }
         .name_heart {
             flex-direction: row;
-            font-size: 6.13vw;
+            font-size: 23px;
             width: 100%;
         }
         .heart {
@@ -48,9 +49,9 @@ header {
 
     .description {
         @include center();
-        border-radius: 4vw;
+        border-radius: 15px;
         margin-top: 15px;
-        height: 18.66vw;
+        height: 70px;
         width: 100%;
         box-shadow: $shadow;
         background-color: $blue_main;
@@ -59,58 +60,51 @@ header {
         animation-fill-mode: forwards;
         &__container {
             @include center();
-            justify-content: space-between;
             background-color: $background;
             width: 100%;
-            border-radius: 4vw;
+            border-radius: 15px;
             height: inherit;
-            animation: out 1s ease 0s 1 normal;
+            animation: leftto_right 1s ease-in 0s 1 normal;
             .meal {
                 @include center(column);
                 align-items: flex-start;
-                height: 12vw;
-                width: 85%;
-                margin-left: 2vw;
+                height: 45px;
+                width: 100%;
+                margin-left: 10px;
             }
             .price {
-                height: 12vw;
+                height: 45px;
                 @include center(row);
                 align-items: flex-end;
-                margin-right: 2.5%;
+                width: 30px;
+                right: 5%;
                 h4 {
-                    margin-bottom: 0.8vw;
+                    margin-bottom: 3px;
                     font-family: 'Roboto_Regular';
                 }
             }
-        }
-        .fas {
-            opacity: 0;
-            position: absolute;
-            color: $background;
-            right: 3%;
-            font-size: 5.33vw;
-            animation: test4 1s ease 0s 1 normal;
         }
     }
 
     .description:hover {
         .description__container {
-            animation: example 1s ease 0s 1 normal forwards;
+            animation: rightto_left 1s ease-out 0s 1 normal forwards;
         }
-        .fas {
-            animation: test3 1.10s ease 0s 1 normal forwards;
+        .check {
+            animation: test3 1s ease-out 0s 1 normal forwards;
         }
     }
 
-    .t:nth-of-type(1) .description:nth-of-type(1) { animation-delay: 0.25s }
-    .t:nth-of-type(1) .description:nth-of-type(2) { animation-delay: 0.50s }
-    .t:nth-of-type(1) .description:nth-of-type(3) { animation-delay: 0.75s }
-    .t:nth-of-type(2) .description:nth-of-type(1) { animation-delay: 1s }
-    .t:nth-of-type(2) .description:nth-of-type(2) { animation-delay: 1.25s }
-    .t:nth-of-type(2) .description:nth-of-type(3) { animation-delay: 1.50s }
-    .t:nth-of-type(3) .description:nth-of-type(1) { animation-delay: 1.75s }
-    .t:nth-of-type(3) .description:nth-of-type(2) { animation-delay: 2s }
-    .t:nth-of-type(3) .description:nth-of-type(3) { animation-delay: 2.25s }
+    .dishes:nth-of-type(2) .description:nth-of-type(1) { animation-delay: 0.75s }
+    .dishes:nth-of-type(2) .description:nth-of-type(2) { animation-delay: 1s }
+    .dishes:nth-of-type(2) .description:nth-of-type(3) { animation-delay: 1.25s }
+    .dishes:nth-of-type(2) .description:nth-of-type(4) { animation-delay: 1.37s }
+    .dishes:nth-of-type(3) .description:nth-of-type(1) { animation-delay: 1.50s }
+    .dishes:nth-of-type(3) .description:nth-of-type(2) { animation-delay: 1.75s }
+    .dishes:nth-of-type(3) .description:nth-of-type(3) { animation-delay: 2s }
+    .dishes:nth-of-type(4) .description:nth-of-type(1) { animation-delay: 2.25s }
+    .dishes:nth-of-type(4) .description:nth-of-type(2) { animation-delay: 2.50s }
+    .dishes:nth-of-type(4) .description:nth-of-type(3) { animation-delay: 2.75s }
 
     h1 {
         width: 90%;
@@ -121,35 +115,39 @@ header {
         margin-top: 8vw;
         width: 100%;
         font-family: 'Roboto_thin';
-        font-size: 4.26vw;
+        font-size: 16px;
     }
 }
 
-.test {
-    margin: 13.33vw 0 22.66vw 0;
+.check {
+    opacity: 0;
+    position: relative;
+    color: $background;
+    left: 60px;
+    font-size: 20px;
+    animation: test4 1s ease-in 0s 1 normal forwards;
+    pointer-events: none;
 }
 
-
+.button {
+    margin: 50px 0 85px 0;
+}
 
 @keyframes test4 {
     0% {
-        right: 11%;
-        opacity: 1;
-    }
-    15% {
-        opacity: 1;
-    }
-    50% {
         transform:rotate(360deg);
+        opacity: 1;
+    }
+    75% {
         opacity: 0;
     }
     100% {
-        
+        transform:rotate(0deg);
         opacity: 0;
     }
 }
 
-@keyframes out {
+@keyframes leftto_right {
     from {
         margin-right: 20%;
         width: 80%;
@@ -160,36 +158,32 @@ header {
     to {
         margin-right: 0%;
         width: 100%;
-        border-top-right-radius: 4vw;
-        border-bottom-right-radius: 4vw;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
     }
 }
 
 @keyframes test3 {
     0% {
-        
-        opacity: 0;
-    }
-    15% {
-        
         transform:rotate(360deg);
         opacity: 0;
     }
-    50% {
-        opacity: 1;
+    35% {
+        opacity: 0;
     }
     100% {
-        right: 11%;
+        transform:rotate(0deg);
         opacity: 1;
+        display: unset;
     }
 }
 
-@keyframes example {
+@keyframes rightto_left {
     from {
         margin-right: 0%;
         width: 100%;
-        border-top-right-radius: 4vw;
-        border-bottom-right-radius: 4vw;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
     }
 
     to {
@@ -206,5 +200,10 @@ header {
     }
     to {
         opacity:1;
+    }
+}
+@media screen and (max-width: 500px){   
+    .check {
+        left: 16%;
     }
 }
