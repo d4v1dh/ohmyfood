@@ -45,12 +45,12 @@ body hr {
   border: none;
 }
 
-body h1 {
+body h2 {
   font-family: 'Roboto_medium';
   font-size: 24px;
 }
 
-body h2 {
+body h3 {
   font-family: 'Roboto_regular';
   font-size: 18px;
   width: 100%;
@@ -59,18 +59,9 @@ body h2 {
   white-space: nowrap;
 }
 
-body h3 {
-  font-family: 'Roboto_thin';
-  font-size: 17px;
-}
-
 body h4 {
   font-family: 'Roboto_thin';
-  font-size: 15px;
-  width: 100%;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+  font-size: 17px;
 }
 
 header {
@@ -738,7 +729,7 @@ header img {
   border-radius: 5px;
 }
 
-.new h5 {
+.new span {
   font-size: 14px;
 }
 
@@ -792,7 +783,7 @@ header img {
   .restaurants__container a {
     width: 45%;
   }
-  .restaurants__container h1 {
+  .restaurants__container h2 {
     width: 100%;
   }
 }

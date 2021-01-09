@@ -79,11 +79,11 @@
             background-color: $blue_main;
             border: none;
         }
-        h1 {
+        h2 {
             font-family: 'Roboto_medium';
             font-size: 24px;
         }
-        h2 {
+        h3 {
             font-family: 'Roboto_regular';
             font-size: 18px;
             width: 100%;
@@ -91,17 +91,9 @@
             overflow: hidden;
             white-space: nowrap;
         }
-        h3 {
-            font-family: 'Roboto_thin';
-            font-size: 17px;
-        }
         h4 {
             font-family: 'Roboto_thin';
-            font-size: 15px;
-            width: 100%;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
+            font-size: 17px;
         }
     }
     
