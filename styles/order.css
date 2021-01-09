@@ -1,21 +1,21 @@
 @font-face {
     font-family: "Shrikhand";
-    src: url("../../fonts/Shrikhand/Shrikhand-Regular.ttf");
+    src: url("../fonts/Shrikhand/Shrikhand-Regular.ttf");
 }
 
 @font-face {
     font-family: "Roboto_thin";
-    src: url("../../fonts/Roboto/Roboto-Thin.ttf");
+    src: url("../fonts/Roboto/Roboto-Thin.ttf");
 }
 
 @font-face {
     font-family: "Roboto_regular";
-    src: url("../../fonts/Roboto/Roboto-Regular.ttf");
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
     font-family: "Roboto_medium";
-    src: url("../../fonts/Roboto/Roboto-Medium.ttf");
+    src: url("../fonts/Roboto/Roboto-Medium.ttf");
 }
 
 * {
