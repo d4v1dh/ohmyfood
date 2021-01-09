@@ -6,7 +6,6 @@ $grey_background: #F6F6F6;
 $black_footer: #353535;
 $shadow: 4px 4px 15px -3px rgba(0, 0, 0, 0.30);
 $purpink_gradient: linear-gradient(176deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 69%);
-
 @mixin center($direction: row) {
     display: flex;
     justify-content: center;
@@ -34,22 +33,22 @@ $purpink_gradient: linear-gradient(176deg, rgba(255, 121, 218, 1) 0%, rgba(147, 
 
 @font-face {
     font-family: "Shrikhand";
-    src: url('../../fonts/Shrikhand/Shrikhand-Regular.ttf');
+    src: url('../fonts/Shrikhand/Shrikhand-Regular.ttf');
 }
 
 @font-face {
     font-family: "Roboto_thin";
-    src: url('../../fonts/Roboto/Roboto-Thin.ttf');
+    src: url('../fonts/Roboto/Roboto-Thin.ttf');
 }
 
 @font-face {
     font-family: "Roboto_regular";
-    src: url('../../fonts/Roboto/Roboto-Regular.ttf');
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
 }
 
 @font-face {
     font-family: "Roboto_medium";
-    src: url('../../fonts/Roboto/Roboto-Medium.ttf');
+    src: url('../fonts/Roboto/Roboto-Medium.ttf');
 }
 
 * {
@@ -69,7 +68,6 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Roboto_regular';
-
     hr {
         width: 40px;
         height: 3px;
@@ -77,12 +75,10 @@ body {
         background-color: $blue_main;
         border: none;
     }
-
     h1 {
         font-family: 'Roboto_medium';
         font-size: 24px;
     }
-
     h2 {
         font-family: 'Roboto_regular';
         font-size: 18px;
@@ -91,12 +87,10 @@ body {
         overflow: hidden;
         white-space: nowrap;
     }
-
     h3 {
         font-family: 'Roboto_thin';
         font-size: 17px;
     }
-
     h4 {
         font-family: 'Roboto_thin';
         font-size: 15px;
@@ -165,8 +159,7 @@ header {
 }
 
 //loader
-
-.loader_container{
+.loader_container {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -182,33 +175,36 @@ header {
     text-align: center;
     font-size: 15px;
     animation: out_frame 1s 0.5s normal forwards;
-  }
-  
-  .loader > div {
+}
+
+.loader>div {
     background-color: $purple_main;
     height: 100%;
     width: 10px;
     display: inline-block;
     animation: stretchdelay 1s infinite ease-in-out;
-  }
-  
-  .loader .rect2 {
-    animation-delay: -0.9s;
-  }
-  
-  .loader .rect3 {
-    animation-delay: -0.8s;
-  }
-  
-  @keyframes stretchdelay {
-    0%, 40%, 100% { 
-      transform: scaleY(0.6);
-    }  20% { 
-      transform: scaleY(1.0);
-    }
-  }
-//loader end
+}
 
+.loader .rect2 {
+    animation-delay: -0.9s;
+}
+
+.loader .rect3 {
+    animation-delay: -0.8s;
+}
+
+@keyframes stretchdelay {
+    0%,
+    40%,
+    100% {
+        transform: scaleY(0.6);
+    }
+    20% {
+        transform: scaleY(1.0);
+    }
+}
+
+//loader end
 @keyframes fill_animation {
     0% {
         opacity: 0;
@@ -270,7 +266,6 @@ header {
                 width: 500px;
                 li {
                     width: 50%;
-
                 }
             }
         }

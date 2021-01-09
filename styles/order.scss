@@ -1,5 +1,4 @@
-@import 'variables';
-
+@import 'general';
 .presentation {
     img {
         position: absolute;
@@ -46,7 +45,6 @@ header {
         }
         @include heart();
     }
-
     .description {
         @include center();
         border-radius: 15px;
@@ -85,7 +83,6 @@ header {
             }
         }
     }
-
     .description:hover {
         .description__container {
             animation: rightto_left 1s ease-out 0s 1 normal forwards;
@@ -94,23 +91,40 @@ header {
             animation: test3 1s ease-out 0s 1 normal forwards;
         }
     }
-
-    .dishes:nth-of-type(2) .description:nth-of-type(1) { animation-delay: 0.75s }
-    .dishes:nth-of-type(2) .description:nth-of-type(2) { animation-delay: 1s }
-    .dishes:nth-of-type(2) .description:nth-of-type(3) { animation-delay: 1.25s }
-    .dishes:nth-of-type(2) .description:nth-of-type(4) { animation-delay: 1.37s }
-    .dishes:nth-of-type(3) .description:nth-of-type(1) { animation-delay: 1.50s }
-    .dishes:nth-of-type(3) .description:nth-of-type(2) { animation-delay: 1.75s }
-    .dishes:nth-of-type(3) .description:nth-of-type(3) { animation-delay: 2s }
-    .dishes:nth-of-type(4) .description:nth-of-type(1) { animation-delay: 2.25s }
-    .dishes:nth-of-type(4) .description:nth-of-type(2) { animation-delay: 2.50s }
-    .dishes:nth-of-type(4) .description:nth-of-type(3) { animation-delay: 2.75s }
-
+    .dishes:nth-of-type(2) .description:nth-of-type(1) {
+        animation-delay: 0.75s
+    }
+    .dishes:nth-of-type(2) .description:nth-of-type(2) {
+        animation-delay: 1s
+    }
+    .dishes:nth-of-type(2) .description:nth-of-type(3) {
+        animation-delay: 1.25s
+    }
+    .dishes:nth-of-type(2) .description:nth-of-type(4) {
+        animation-delay: 1.37s
+    }
+    .dishes:nth-of-type(3) .description:nth-of-type(1) {
+        animation-delay: 1.50s
+    }
+    .dishes:nth-of-type(3) .description:nth-of-type(2) {
+        animation-delay: 1.75s
+    }
+    .dishes:nth-of-type(3) .description:nth-of-type(3) {
+        animation-delay: 2s
+    }
+    .dishes:nth-of-type(4) .description:nth-of-type(1) {
+        animation-delay: 2.25s
+    }
+    .dishes:nth-of-type(4) .description:nth-of-type(2) {
+        animation-delay: 2.50s
+    }
+    .dishes:nth-of-type(4) .description:nth-of-type(3) {
+        animation-delay: 2.75s
+    }
     h1 {
         width: 90%;
         font-family: 'Shrikhand';
     }
-
     span {
         margin-top: 8vw;
         width: 100%;
@@ -135,14 +149,14 @@ header {
 
 @keyframes test4 {
     0% {
-        transform:rotate(360deg);
+        transform: rotate(360deg);
         opacity: 1;
     }
     75% {
         opacity: 0;
     }
     100% {
-        transform:rotate(0deg);
+        transform: rotate(0deg);
         opacity: 0;
     }
 }
@@ -154,7 +168,6 @@ header {
         border-top-right-radius: 0vw;
         border-bottom-right-radius: 0vw;
     }
-
     to {
         margin-right: 0%;
         width: 100%;
@@ -165,14 +178,14 @@ header {
 
 @keyframes test3 {
     0% {
-        transform:rotate(360deg);
+        transform: rotate(360deg);
         opacity: 0;
     }
     35% {
         opacity: 0;
     }
     100% {
-        transform:rotate(0deg);
+        transform: rotate(0deg);
         opacity: 1;
         display: unset;
     }
@@ -185,7 +198,6 @@ header {
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
     }
-
     to {
         margin-right: 20%;
         width: 80%;
@@ -196,13 +208,14 @@ header {
 
 @keyframes fadein {
     from {
-        opacity:0;
+        opacity: 0;
     }
     to {
-        opacity:1;
+        opacity: 1;
     }
 }
-@media screen and (max-width: 500px){   
+
+@media screen and (max-width: 500px) {
     .check {
         left: 16%;
     }
