@@ -698,7 +698,7 @@ header a .fas {
   margin: 50px 0 85px 0;
 }
 
-@-webkit-keyframes ease-in {
+@-webkit-keyframes easein {
   0% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
@@ -714,7 +714,7 @@ header a .fas {
   }
 }
 
-@keyframes ease-in {
+@keyframes easein {
   0% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
