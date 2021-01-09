@@ -616,8 +616,8 @@ header a .fas {
 }
 
 .menu .description:hover .check {
-  -webkit-animation: test3 1s ease-out 0s 1 normal forwards;
-          animation: test3 1s ease-out 0s 1 normal forwards;
+  -webkit-animation: easeout 1s ease-out 0s 1 normal forwards;
+          animation: easeout 1s ease-out 0s 1 normal forwards;
 }
 
 .menu .dishes:nth-of-type(2) .description:nth-of-type(1) {
@@ -688,8 +688,8 @@ header a .fas {
   color: #FFFFFF;
   left: 60px;
   font-size: 20px;
-  -webkit-animation: test4 1s ease-in 0s 1 normal forwards;
-          animation: test4 1s ease-in 0s 1 normal forwards;
+  -webkit-animation: easein 1s ease-in 0s 1 normal forwards;
+          animation: easein 1s ease-in 0s 1 normal forwards;
   pointer-events: none;
 }
 
@@ -697,7 +697,7 @@ header a .fas {
   margin: 50px 0 85px 0;
 }
 
-@-webkit-keyframes test4 {
+@-webkit-keyframes ease-in {
   0% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
@@ -713,7 +713,7 @@ header a .fas {
   }
 }
 
-@keyframes test4 {
+@keyframes ease-in {
   0% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
@@ -759,7 +759,7 @@ header a .fas {
   }
 }
 
-@-webkit-keyframes test3 {
+@-webkit-keyframes easeout {
   0% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
@@ -776,7 +776,7 @@ header a .fas {
   }
 }
 
-@keyframes test3 {
+@keyframes easeout {
   0% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);

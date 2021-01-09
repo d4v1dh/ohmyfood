@@ -89,7 +89,7 @@ header {
             animation: rightto_left 1s ease-out 0s 1 normal forwards;
         }
         .check {
-            animation: test3 1s ease-out 0s 1 normal forwards;
+            animation: easeout 1s ease-out 0s 1 normal forwards;
         }
     }
     .dishes:nth-of-type(2) .description:nth-of-type(1) {
@@ -140,7 +140,7 @@ header {
     color: $background;
     left: 60px;
     font-size: 20px;
-    animation: test4 1s ease-in 0s 1 normal forwards;
+    animation: easein 1s ease-in 0s 1 normal forwards;
     pointer-events: none;
 }
 
@@ -148,7 +148,7 @@ header {
     margin: 50px 0 85px 0;
 }
 
-@keyframes test4 {
+@keyframes ease-in {
     0% {
         transform: rotate(360deg);
         opacity: 1;
@@ -177,7 +177,7 @@ header {
     }
 }
 
-@keyframes test3 {
+@keyframes easeout {
     0% {
         transform: rotate(360deg);
         opacity: 0;
